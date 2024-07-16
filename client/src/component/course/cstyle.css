@@ -1,0 +1,17 @@
+
+.member1 li{ 
+  padding: .4rem;
+  z-index: 2;
+  transition:3;
+  
+}
+.member1{
+  transition: .2s;
+  top: 115%;
+  background-color: rgba(213, 124, 112, 0.9);
+  
+}
+.members:hover .member1{
+  top: 0%;
+  
+}

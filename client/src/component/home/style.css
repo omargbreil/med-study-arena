@@ -1,0 +1,89 @@
+/* Home.css */
+
+.home-container {
+    background-color: #007bff;
+    color: #fff;
+    padding: 3rem 1rem;
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+  }
+  
+  .hero-content {
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .feature-item {
+    background-color: #28a745;
+    padding: 2rem;
+    border-radius: 0.5rem;
+  }
+  
+  .feature-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-description {
+    line-height: 1.6;
+  }
+  
+  .cta-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .cta-item {
+    background-color: #fff;
+    color: #333;
+    padding: 2rem;
+    border-radius: 0.5rem;
+  }
+  
+  .cta-title {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-description {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
