@@ -5,9 +5,6 @@ import Home from './component/home/Home.jsx';
 import Signup from './component/signup/Signup.jsx';
 import Signin from './component/signin/Signin.jsx';
 import Course from './component/course/Course.jsx';
-import US_STUDENT from './component/q_question/us_student/Us_student.jsx';
-import INT_STUDENT from './component/q_question/int_student/Int_student.jsx';
-import Graduate from './component/q_question/graduate/Graduate.jsx';
 import Track from './component/track/Track.jsx';
 import Step from './component/track/step/Step.jsx';
 import Admin from './component/admin/Admin.jsx';
@@ -160,9 +157,7 @@ function App() {
           <Route path='addstep/:id' element={<ProtectedAdminRoute><AddStep /></ProtectedAdminRoute>} />
           <Route path='updatestep/:id' element={<ProtectedAdminRoute><UpdateStep /></ProtectedAdminRoute>} />
 
-          <Route path='us_student' element={<ProtectedRoute><US_STUDENT /></ProtectedRoute>} />
-          <Route path='int_student' element={<ProtectedRoute><INT_STUDENT /></ProtectedRoute>} />
-          <Route path='int_graduate' element={<ProtectedRoute><Graduate /></ProtectedRoute>} />
+
         </>)}
 
         <Route path='*' element={<h1>404</h1>} />
