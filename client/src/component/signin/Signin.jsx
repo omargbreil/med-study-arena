@@ -75,7 +75,7 @@ export default function Signin(props) {
       setvalidationError([]);
       try {
 
-        let {data} = await axios.post('http://localhost:5000/arena/v1/user/signin', user);
+        let {data} = await axios.post('https://med-study-arena.vercel.app/arena/v1/user/signin', user);
 
         if (data.message ==="done") {
 
@@ -85,33 +85,7 @@ export default function Signin(props) {
           setloading(false);
           localStorage.setItem('userToken', data.token);
           getToken();
-
-
-          const qualification =data.user.qualification;
-          const answered=data.user.answered;
-
-          if (answered) {
-            navigate('/course');
-          }else{
-            
-            if (qualification==="us_student") {
-            
-              navigate('/us_student');
-  
-            }else if(qualification==="int_student"){
-  
-              navigate('/int_student');
-  
-            }else if(qualification==="int_graduate"){
-  
-              navigate('/int_graduate');
-              
-  
-            }else{
-  
-              seterror("Something wrong please contact the admin")
-            }
-          }
+          navigate('/course');
 
         } else {
           seterror(data.message);

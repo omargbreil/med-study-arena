@@ -49,7 +49,7 @@ export default function UpdateCourse() {
   
     console.log(formData);
     try {
-      const response = await axios.put(`http://localhost:5000/arena/v1/course/update/${id}`, formData, {
+      const response = await axios.put(`https://med-study-arena.vercel.app/arena/v1/course/update/${id}`, formData, {
         headers: {
           'token': token,
           'Content-Type': 'multipart/form-data',

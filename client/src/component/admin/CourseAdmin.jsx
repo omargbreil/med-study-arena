@@ -21,7 +21,7 @@ export default function CourseAdmin() {
 
 
         try {
-            const response = await axios.delete(`http://localhost:5000/arena/v1/track/delete/${tid}`, {
+            const response = await axios.delete(`https://med-study-arena.vercel.app/arena/v1/track/delete/${tid}`, {
                 headers: {
                     'token': token,
                 },
