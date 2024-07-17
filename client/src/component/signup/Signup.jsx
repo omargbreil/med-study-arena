@@ -151,19 +151,6 @@ export default function Signup() {
 
 
 
-        <h2>are you</h2>
-
-        <input onChange={getUser} type="radio" value="us_student" id='us_student' name="qualification" className='m-2' />
-        <label htmlFor='us_student'>US medical student</label>
-
-
-        <input onChange={getUser} type="radio" value="int_student" id='int_student' name="qualification" className='m-2' />
-        <label htmlFor='int_student'>International medical student</label>
-
-
-        <input onChange={getUser} type="radio" value="int_graduate" id="int_graduate" name="qualification" className='m-2' />
-        <label htmlFor='int_graduate'>International medical graduate</label>
-
 
 
 
