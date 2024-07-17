@@ -50,11 +50,6 @@ class User extends Model {
         allowNull:false,
         unique:true
       },
-      qualification:{
-        type:DataTypes.ENUM("us_student","int_student","int_graduate")
-
-      },
-      
       otp:{
         type:DataTypes.INTEGER,
          defaultValue:0
@@ -68,11 +63,6 @@ class User extends Model {
        type:DataTypes.BOOLEAN,
        defaultValue:false,
       },
-      answered:{
-        type:DataTypes.BOOLEAN,
-        defaultValue:false,
-      },
-      
       pay:{
         type:DataTypes.BOOLEAN,
         defaultValue:false

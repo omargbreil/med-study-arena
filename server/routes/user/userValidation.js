@@ -32,9 +32,8 @@ body:joi.object({
         .email({ minDomainSegments: 2, tlds: { allow: ['com', 'net'] } })
         .required(),
         
-    country:joi .string().required(),
+    country:joi.string().required()
     
-    qualification:joi.string().required(),
 
 
 })

@@ -21,7 +21,7 @@ userRouter.post('/signup',validation(signupSchema),asyncHandler(async(req,res,ne
 
     const user = User.build(req.body);
     
-    let email = user.getEmail();
+    let email =  user.getEmail();
 
     const findUser = await User.findOne({where:{email}});
 
@@ -33,7 +33,7 @@ userRouter.post('/signup',validation(signupSchema),asyncHandler(async(req,res,ne
     const hashed = bcrypt.hashSync(req.body.password, parseInt(process.env.salt));
     user.password= hashed;
     user.id=generateId();
-    let token = jwt.sign({id:user.id,email} , process.env.token_verify , {expiresIn:"1hr"});
+    // let token = jwt.sign({id:user.id,email} , process.env.token_verify , {expiresIn:"1hr"});
 
     // let link =`${req.protocol}://${req.headers.host}/med/v1/user/confirm/${token}`;
     // let message = `verify your email <a href="${link}">click here</a>`;
@@ -99,7 +99,7 @@ asyncHandler(async (req,res,next) => {
             return next(new AppError("the password is incorrect", 400))
 
         }; 
-            let token = jwt.sign({ email: user.email, id: user.id ,qlf:user.qualification ,role:user.role,pay:user.pay}, process.env.token_key);
+            let token = jwt.sign({ email: user.email, id: user.id,role:user.role,pay:user.pay}, process.env.token_key);
             res.status(200).json({ message: "done", user, token });
         
         }));

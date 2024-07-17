@@ -75,7 +75,7 @@ export default function Signin(props) {
       setvalidationError([]);
       try {
 
-        let {data} = await axios.post('https://study-arena-f.vercel.app/arena/v1/user/signin', user);
+        let {data} = await axios.post('https://study-arena.vercel.app/arena/v1/user/signin', user);
 
         if (data.message ==="done") {
 
