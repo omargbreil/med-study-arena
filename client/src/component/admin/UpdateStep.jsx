@@ -55,7 +55,7 @@ export default function AddStep() {
     // console.log(step);
     // console.log(token);
     try {
-      const response = await axios.put(`https://med-study-arena.vercel.app/arena/v1/track/update/${id}`, step, {
+      const response = await axios.put(`https://study-arena-f.vercel.app/arena/v1/track/update/${id}`, step, {
         headers: {
           'token': token,
           'Content-Type': 'multipart/form-data',

@@ -92,7 +92,7 @@ export default function Signup() {
       setvalidationError([]);
       try {
 
-        let { data } = await axios.post('https://med-study-arena.vercel.app/arena/v1/user/signup', user);
+        let { data } = await axios.post('https://study-arena-f.vercel.app/arena/v1/user/signup', user);
 
         if (data.message === "done") {
 

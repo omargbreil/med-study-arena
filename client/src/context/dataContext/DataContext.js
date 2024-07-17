@@ -17,7 +17,7 @@ export function DataContextProvider(props)
         try {
 
             
-        let {data} = await axios.get(`https://med-study-arena.vercel.app/arena/v1/${dataType}`);
+        let {data} = await axios.get(`https://study-arena-f.vercel.app/arena/v1/${dataType}`);
         callBack(data.result);
             
         } catch (error) {

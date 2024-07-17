@@ -51,7 +51,7 @@ export default function AddCourse() {
     console.log(formData);
     console.log(token);
     try {
-      const response = await axios.post(`https://med-study-arena.vercel.app/arena/v1/course/add`, formData, {
+      const response = await axios.post(`https://study-arena-f.vercel.app/arena/v1/course/add`, formData, {
         headers: {
           'token': token,
           'Content-Type': 'multipart/form-data',

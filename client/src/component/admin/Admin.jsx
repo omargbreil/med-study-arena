@@ -12,7 +12,7 @@ export default function Admin() {
 
    async function getUsers () {
 
-        let {data}= await axios.get('https://med-study-arena.vercel.app/arena/v1/user');
+        let {data}= await axios.get('https://study-arena-f.vercel.app/arena/v1/user');
         console.log(courses);
 
         setusers(data.result);
@@ -29,7 +29,7 @@ export default function Admin() {
 
 
         try {
-            const response = await axios.delete(`https://med-study-arena.vercel.app/arena/v1/course/delete/${tid}`, {
+            const response = await axios.delete(`https://study-arena-f.vercel.app/arena/v1/course/delete/${tid}`, {
                 headers: {
                     'token': token,
                 },
