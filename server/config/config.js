@@ -10,7 +10,7 @@ module.exports={
     "database": process.env.db_name,
     "host": process.env.db_host,
     "dialect":process.env.dialect,
-    
+    "port":process.env.db_port
   },
   "test": {
     "username":process.env.db_username,
